@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+//require('../lib/main.js');
+var program = require('commander');
+const main = require('../lib/main');
+
+program
+  .option('init [type]', 'Generate sample config [simple, full]')
+  .option('deploy [name]', 'Runs deploy, e.g "deploy prod"')
+  .version('0.1.0')
+  .parse(process.argv);
+
+main.run(program);
+
