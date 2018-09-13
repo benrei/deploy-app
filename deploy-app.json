@@ -5,7 +5,7 @@
     "port": "22",
     "files": "LICENSE",
     "path": "~/folder",
-    "pre-deploy-local": "mkdir folder; cd folder;touch file1",
+    "pre-deploy-local": "",
     "post-deploy": "touch file2"
   }
 }
