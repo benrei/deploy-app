@@ -20,8 +20,7 @@ Run in your project
 >$ deploy-app deploy `init`
 
 
-Adds a `deploy-app.json` config file to your projects
-production
+Adds a `deploy-app.json` config file to your project root
 
 
 ```json
@@ -46,7 +45,6 @@ Chose a environment to deploy: `prod`
 
 
 >$ deploy-app `deploy prod`
-
 
 
 That's it.<br>
