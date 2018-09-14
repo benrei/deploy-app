@@ -5,9 +5,9 @@ var program = require('commander');
 const main = require('../lib/main');
 
 program
-  .option('init [type]', 'Generate sample config [simple, full]')
-  .option('deploy [name]', 'Runs deploy, e.g "deploy prod"')
-  .version('0.1.0')
+  .usage('\n  deploy-app init <type>\n  deploy-app -d <env>')
+  .option('init [type]', 'Create config file [full, minimal] (default: full)')
+  .option('-d, --deploy [env]', 'Run deployment, e.g [--deploy prod]')
   .parse(process.argv);
 
 main.run(program);

@@ -1,23 +1,28 @@
 {
   "name": "deploy-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy apps, projects or stuff using scp",
   "main": "lib/main.js",
   "scripts": {
-    "test": "node $NODE_DEBUG_OPTION test/send.js"
+    "test": ""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benrei/deploy-app.git"
   },
   "keywords": [
+    "simple",
     "deploy",
+    "deployment",
+    "scp",
+    "app",
+    "project",
     "pre-deploy",
     "post-deploy",
-    "app",
-    "scp",
+    "ssh",
     "node",
-    "project"
+    "easy",
+    "minimal"
   ],
   "author": "Benjamin Reiersølmoen",
   "bin": {

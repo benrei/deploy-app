@@ -1,0 +1,13 @@
+{
+  "prod": {
+    "user": "pi",
+    "host": "192.168.100.88",
+    "port": "22",
+    "files": "*.md",
+    "path": "~/myProject",
+    "pre-deploy-local": "[ -d myProject ] || mkdir myProject ",
+    "post-deploy": "echo"
+  },
+  "dev": {},
+  "staging": {}
+}

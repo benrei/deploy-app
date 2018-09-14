@@ -1,13 +1,15 @@
 # deploy-app
-Lightweight deployment option for apps, projects and stuff
+[![NPM version](https://img.shields.io/npm/v/deploy-app.svg)](https://www.npmjs.com/package/env-path)
+
+Lightweight deployment solution for node apps, projects and stuff
 
 
->$ deploy-app deploy prod
+>$ deploy-app -d prod
 
 
 
 ## Installation
-[![NPM version](https://img.shields.io/badge/deploy--app-v1.0.0-blue.svg)](https://www.npmjs.com/package/env-path)
+
 ```sh
 $ npm install deploy-app
 ```
@@ -17,10 +19,10 @@ $ npm install deploy-app
 ### Init
 Run in project root
 
->$ deploy-app deploy `init`
+>$ deploy-app `init`
 
 
-Adds a `deploy-app.json` config file to your project root
+Adds a `deploy-app-config.json` config file in your project folder
 
 
 ```json
@@ -41,14 +43,18 @@ Adds a `deploy-app.json` config file to your project root
 
 
 ### Deploy
-Chose a environment to deploy: `prod`
+To deploy `prod`, simply run:
 
 
->$ deploy-app `deploy prod`
+>$ deploy-app `-d prod`
 
 
 That's it.<br>
 Happy coding!
+
+### Help
+For help see:
+>$ deploy-app -h
 
 ##  Docs
 ```js
