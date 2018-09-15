@@ -6,7 +6,7 @@
     "files": "*.md",
     "path": "~/myProject",
     "pre-deploy-local": "[ -d myProject ] || mkdir myProject ",
-    "post-deploy": "echo"
+    "post-deploy": ""
   },
   "dev": {},
   "staging": {}

@@ -64,9 +64,9 @@ For help see:
     "user": "deploy",
     "host": "192.168.0.1",
     "port": "22",
-    //  Files seperated by " " space
+    //  Add files and folders seperated by " " space
     "files": "build src *.json app.js",
-    // Path of the project on target servers
+    // Path to project on target server
     "path": "~/projectFolder",
     // Commands to execute locally (on the same machine you deploy things)
     // Can be multiple commands separated by the character ";"

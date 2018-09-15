@@ -15,12 +15,12 @@
     "deploy",
     "deployment",
     "scp",
+    "node",
     "app",
     "project",
     "pre-deploy",
     "post-deploy",
     "ssh",
-    "node",
     "easy",
     "minimal"
   ],
