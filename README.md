@@ -1,5 +1,7 @@
 # deploy-app
-[![NPM version](https://img.shields.io/npm/v/deploy-app.svg)](https://www.npmjs.com/package/env-path)
+[![Build Status](https://travis-ci.org/benrei/deploy-app.svg?branch=master)](https://travis-ci.org/benrei/deploy-app)
+[![NPM version](https://img.shields.io/npm/v/deploy-app.svg)](https://www.npmjs.com/package/deploy-app)
+
 
 Lightweight deployment solution for node apps, projects and stuff
 
