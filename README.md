@@ -35,7 +35,8 @@ Adds a `deploy-app-config.json` config file in your project folder
     "port": "22",
     "files": "build src *.json app.js",
     "path": "~/projectFolder",
-    "pre-deploy-local" : "mkdir projectFolder; cd projectFolder; foo bar",
+    "pre-deploy-local" : "npm run build",
+    "pre-deploy-remote" : "mkdir projectFolder; cd projectFolder; foo bar",
     "post-deploy" : "npm install --production; node app.js"
   },
   "dev":{},
@@ -70,10 +71,12 @@ For help see:
     "files": "build src *.json app.js",
     // Path to project on target server
     "path": "~/projectFolder",
-    // Commands to execute locally (on the same machine you deploy things)
     // Can be multiple commands separated by the character ";"
-    "pre-deploy-local" : "mkdir projectFolder; cd projectFolder; foo bar",
-    // Commands to be executed on the server after deploy (in project root)
+    // Commands to execute locally before deploying
+    "pre-deploy-local" : "npm run build",
+    // Commands to execute remote before deploy
+    "pre-deploy-remote" : "mkdir projectFolder; cd projectFolder; foo bar",
+    // Commands to execute remote after deploy (in project root)
     "post-deploy" : "npm install --production; node app.js"
   },
   //  Add multiple environments

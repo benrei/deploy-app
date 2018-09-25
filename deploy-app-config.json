@@ -5,8 +5,9 @@
     "port": "22",
     "files": "*.md",
     "path": "~/myProject",
-    "pre-deploy-local": "[ -d myProject ] || mkdir myProject ",
-    "post-deploy": ""
+    "pre-deploy-local": "npm run build",
+    "pre-deploy-remote": "[ -d myProject ] || mkdir myProject ",
+    "post-deploy": "echo"
   },
   "dev": {},
   "staging": {}
