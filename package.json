@@ -1,6 +1,6 @@
 {
   "name": "deploy-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Deploy apps, projects or stuff using scp",
   "main": "lib/main.js",
   "scripts": {
